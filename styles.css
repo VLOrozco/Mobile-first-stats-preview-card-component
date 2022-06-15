@@ -19,7 +19,19 @@ Created mobile first @ 375px
 
 /* ========================================================================= */
 /* 1. GLOBAL */
-
+:root {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: 
+  hsla(0, 0%, 100%, 1);
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: 
+  hsla(233, 47%, 7%, 1);
+}
 
 /* ========================================================================= */
 /* 2. LAYOUT */
