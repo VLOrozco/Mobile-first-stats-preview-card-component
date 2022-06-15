@@ -24,6 +24,7 @@ Created mobile first @ 375px
   font-size: 15px;
   color: 
   hsla(0, 0%, 100%, 1);
+  text-align: center;
 }
 body {
   margin: 0;
@@ -42,6 +43,11 @@ body {
 /* 3. TYPOGRAPHY */
 
 
-
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 /* ========================================================================= */
 /* 4. MEDIA QUERY */
