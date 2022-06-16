@@ -33,6 +33,8 @@ body {
   width: 100%;
   background-color: 
   hsla(233, 47%, 7%, 1);
+
+  /* flexbox */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,13 +48,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 327px;
-  margin-top: 158px;
-  position: relative;
+  margin-top: 415px;
+  position: absolute;
 }
 .bg-color {
   position: absolute;
   width: 327px;
-  height: 650px;
+  height: 620px;
   top: 50px;
   background: #1B1937;
   box-shadow: 0px 20px 20px rgba(23, 25, 41, 0.203087);
@@ -70,11 +72,12 @@ body {
   .picture {
     position: relative;
     object-fit: cover;
-    opacity: 0.7;
+    object-position: 5% 12%;
+    opacity: 0.67;
   }
   .purple {
     position: absolute;
-    background-color: #470372;
+    background-color: rgb(96, 1, 155);
   }
 
 /* INFO | LAYOUT */
@@ -82,21 +85,17 @@ body {
   position: absolute;
   height: 96px;
   width: 264px;
-  top: 150px;
+  top: 91.2px;
   left: 32px;
 }
   #title {
     height: 96px;
     width: 264px;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: center;
   }
   #description {
     height: 100px;
     width: 264px;
+    margin-top: -4px;
   }
 
 /* STATS | LAYOUT */
@@ -107,9 +106,27 @@ body {
     align-items: center;
     position: absolute;
     width: 264px;
-    top: 380px;
+    top: 342px;
     left: 30px;
   }
+    .project-title {
+      margin-top: -18px;
+    }
+    .templates, .queries {
+      margin-top: -9px;
+    }
+
+    .queries {
+      margin-bottom: 87px;
+    }
+/* ATTRIBUTION | LAYOUT */
+.attribution {
+  background-color: transparent;
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  width: 180px;
+}
 
 
 /* ========================================================================= */
@@ -118,6 +135,13 @@ strong {
   color: 
   hsla(277, 64%, 61%, 1);
   font-weight: 700;
+}
+#title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 #description {
   font-size: 15px;
@@ -140,10 +164,13 @@ strong {
   text-transform: uppercase;
   opacity: 0.6;
 }
+.queries {
+  text-transform: uppercase;
+}
 
 /* ATTRIBUTION */
 .attribution {
-  font-size: 11px;
+  font-size: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
