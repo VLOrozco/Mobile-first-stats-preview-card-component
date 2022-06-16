@@ -190,20 +190,61 @@ strong {
   }
   .bg-color, .image, .picture, .purple, .info {
     width: 540px;
+    height: 446px;
   }
   .image, .picture, .purple {
     height: 446px;
     border-radius: 0px 8px 8px 0px;
-    margin-left: 290px;
+    margin-left: 270px;
+    margin-top: 87.5px;
   }
   .picture {
     object-position: center center;
   }
+  .purple {
+    margin-top: 105.5px;
+  }
   .bg-color {
     border-radius: 8px 0px 0px 8px;
-    top: 177px;
+    top: 194px;
   }
   .info {
     height: 446px;
+    width: 403px;
+    margin-left: 14px;
+  }
+  #title {
+    width: 100%;
+    height: 88px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -25px;
+  }
+  #description {
+    height: 75px;
+    width: 374px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 7px;
+  }
+  .stats {
+    flex-direction: row;
+    width: 380px;
+    top: 310px;
+  }
+  .project-title, .templates, .queries {
+    margin-top: 0;
+  }
+  .queries {
+    margin-bottom: 0;
+  }
+  .attribution {
+    bottom: 200px;
+    width: 300px;
   }
 }
