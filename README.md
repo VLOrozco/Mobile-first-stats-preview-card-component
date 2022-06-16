@@ -17,7 +17,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Built with](#built-with)
   - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
 ## Overview
 
@@ -31,10 +31,10 @@ Users should be able to:
 ## Screenshot
 
 ### Mobile View
-<img src="images/mobileView.png" alt="component mobile view" width="50%"/>
+<img src="images/mobileView.png" alt="stat preview card component in mobile view" width="50%"/>
 
 ### Desktop View
-<img src="images/desktopView.png" alt="component desktop view" width="100%"/>
+<img src="images/desktopView.png" alt="stat preview card component in desktop view" width="100%"/>
 
 ---
 ## Links
