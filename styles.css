@@ -25,6 +25,7 @@ Created mobile first @ 375px
   color: 
   hsla(0, 0%, 100%, 1);
   text-align: center;
+  letter-spacing: 0px;
 }
 body {
   margin: 0;
@@ -41,8 +42,22 @@ body {
 /* ========================================================================= */
 /* 2. LAYOUT */
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 327px;
-  margin-top: 88px;
+  margin-top: 158px;
+  position: relative;
+}
+.bg-color {
+  position: absolute;
+  width: 327px;
+  height: 650px;
+  top: 50px;
+  background: #1B1937;
+  box-shadow: 0px 20px 20px rgba(23, 25, 41, 0.203087);
+  border-radius: 8px;
+  z-index: -1;
 }
 
 /* IMAGE */
@@ -62,14 +77,69 @@ body {
     background-color: #470372;
   }
 
+/* INFO | LAYOUT */
+.info {
+  position: absolute;
+  height: 96px;
+  width: 264px;
+  top: 150px;
+  left: 32px;
+}
+  #title {
+    height: 96px;
+    width: 264px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  #description {
+    height: 100px;
+    width: 264px;
+  }
 
+/* STATS | LAYOUT */
+  .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 264px;
+    top: 380px;
+    left: 30px;
+  }
 
 
 /* ========================================================================= */
 /* 3. TYPOGRAPHY */
-
-
-
+strong {
+  color: 
+  hsla(277, 64%, 61%, 1);
+  font-weight: 700;
+}
+#description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: hsla(0, 0%, 100%, 1);
+  opacity: .75;
+}
+.data {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+.project-title {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
 
 /* ATTRIBUTION */
 .attribution {
