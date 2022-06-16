@@ -44,9 +44,11 @@ body {
 /* ========================================================================= */
 /* 2. LAYOUT */
 .container {
+  /* flexbox */
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 327px;
   margin-top: 415px;
   position: absolute;
@@ -100,10 +102,12 @@ body {
 
 /* STATS | LAYOUT */
   .stats {
+    /* flexbox */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  
     position: absolute;
     width: 264px;
     top: 342px;
