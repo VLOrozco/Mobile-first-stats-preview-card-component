@@ -182,5 +182,28 @@ strong {
 /* ========================================================================= */
 /* 4. MEDIA QUERY */
 @media screen and (min-width: 750px) {
-
+  .container {
+    /* background-color: pink; */
+    display: block;
+    width: 1110px;
+    height: 446px;
+  }
+  .bg-color, .image, .picture, .purple, .info {
+    width: 540px;
+  }
+  .image, .picture, .purple {
+    height: 446px;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: 290px;
+  }
+  .picture {
+    object-position: center center;
+  }
+  .bg-color {
+    border-radius: 8px 0px 0px 8px;
+    top: 177px;
+  }
+  .info {
+    height: 446px;
+  }
 }
