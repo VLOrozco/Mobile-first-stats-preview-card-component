@@ -39,8 +39,8 @@ Users should be able to:
 ---
 ## Links
 
-- Solution URL: [Github Code](https://github.com/VLOrozco/mobile-first-order-summary-component.git)
-- Live Site URL: [order-summary-component](https://vlorozco.github.io/mobile-first-order-summary-component/)
+- Solution URL: [Github Code](https://github.com/VLOrozco/Mobile-first-stats-preview-card-component.git)
+- Live Site URL: [order-summary-component](https://vlorozco.github.io/Mobile-first-stats-preview-card-component/)
 
 ---
 ## Built with
