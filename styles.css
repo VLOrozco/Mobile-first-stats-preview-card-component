@@ -28,67 +28,67 @@ Created mobile first @ 375px
   letter-spacing: 0px;
 }
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: 
   hsla(233, 47%, 7%, 1);
-
-  /* flexbox */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+html, body {
+  height: 956px;
 }
 
 /* ========================================================================= */
 /* 2. LAYOUT */
-.container {
+#container-position {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
   /* flexbox */
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 327px;
-  margin-top: 415px;
-  position: absolute;
+  overflow: hidden;
 }
-.bg-color {
-  position: absolute;
+.container {
   width: 327px;
-  height: 620px;
-  top: 50px;
-  background: #1B1937;
-  box-shadow: 0px 20px 20px rgba(23, 25, 41, 0.203087);
+  height: 780px;
+  position: relative;
+  background-color: rgb(27, 25, 55);
   border-radius: 8px;
-  z-index: -1;
 }
 
 /* IMAGE */
-.image, .picture, .purple {
+.image, .purple, .picture {
   width: 327px;
   height: 240px;
   position: absolute;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 8px 0 0;
 }
+  .purple {
+    position: absolute;
+    background-color: rgb(96, 1, 155);
+  }
   .picture {
     position: relative;
     object-fit: cover;
     object-position: 5% 12%;
     opacity: 0.67;
   }
-  .purple {
-    position: absolute;
-    background-color: rgb(96, 1, 155);
-  }
 
 /* INFO | LAYOUT */
 .info {
-  position: absolute;
+  position: relative;
   height: 96px;
   width: 264px;
-  top: 91.2px;
-  left: 32px;
+  top: 17.35rem;
+  margin-left: 32px;
+  margin-right: 32px;
 }
   #title {
     height: 96px;
@@ -97,27 +97,29 @@ body {
   #description {
     height: 100px;
     width: 264px;
-    margin-top: -4px;
+    margin-top: 0;
   }
 
 /* STATS | LAYOUT */
   .stats {
+    width: 264px;
+    height: 16em;
+
     /* flexbox */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  
+
     position: absolute;
-    width: 264px;
-    top: 342px;
+    top: 37.4rem;
     left: 30px;
   }
     .project-title {
       margin-top: -18px;
     }
     .templates, .queries {
-      margin-top: -9px;
+      margin-top: -7px;
     }
 
     .queries {
@@ -125,11 +127,9 @@ body {
     }
 /* ATTRIBUTION | LAYOUT */
 .attribution {
-  background-color: transparent;
+  width: 100%;
   position: absolute;
-  display: block;
-  bottom: 10px;
-  width: 180px;
+  bottom: -2.6rem;
 }
 
 
@@ -183,35 +183,29 @@ strong {
 /* 4. MEDIA QUERY */
 @media screen and (min-width: 750px) {
   .container {
-    /* background-color: pink; */
-    display: block;
     width: 1110px;
     height: 446px;
+    top: -5.4rem;
   }
-  .bg-color, .image, .picture, .purple, .info {
+  .image, .purple, .picture {
     width: 540px;
     height: 446px;
+    border-radius: 0 8px 8px 0;
+    top: 0;
+    right: 0;
   }
-  .image, .picture, .purple {
-    height: 446px;
-    border-radius: 0px 8px 8px 0px;
-    margin-left: 270px;
-    margin-top: 87.5px;
-  }
-  .picture {
-    object-position: center center;
-  }
-  .purple {
-    margin-top: 105.5px;
-  }
-  .bg-color {
-    border-radius: 8px 0px 0px 8px;
-    top: 194px;
-  }
-  .info {
-    height: 446px;
+    .picture {
+      object-position: center center;
+    }
+
+  .info, .stats {
     width: 403px;
-    margin-left: 14px;
+    margin-left: 72px; 
+  }
+
+  .info {
+    height: 340px;
+    top: 3.03rem;
   }
   #title {
     width: 100%;
@@ -219,20 +213,20 @@ strong {
     font-size: 36px;
     line-height: 44px;
     text-align: left;
-    margin-left: 20px;
-    margin-top: -25px;
   }
   #description {
-    height: 75px;
     width: 374px;
+    height: 75px;
+    margin-top: 25px;
     text-align: left;
-    margin-left: 20px;
-    margin-top: 7px;
   }
+
   .stats {
     flex-direction: row;
     width: 380px;
-    top: 310px;
+    height: 6rem;
+    top: 20.4rem;
+    left: -1.5rem;
   }
   .project-title, .templates, .queries {
     margin-top: 0;
@@ -242,9 +236,5 @@ strong {
   }
   .queries {
     margin-bottom: 0;
-  }
-  .attribution {
-    bottom: 200px;
-    width: 300px;
   }
 }
