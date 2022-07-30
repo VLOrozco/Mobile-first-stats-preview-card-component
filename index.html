@@ -10,48 +10,60 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+<div id="container-position">
+  <div class="container">
 
-<div class="container">
-  <!-- IMAGE -->
-  <div class="image">
-    <div class="purple"></div>
-    <picture class="picture">
-      <source  class="picture" media="(min-width: 750px)" srcset="images/image-header-mobile.jpg">
-      <img  class="picture" src="images/image-header-desktop.jpg" alt="Business group meeting">
-    </picture>
-  </div>
-  <div class="bg-color">
-  <!-- INFO -->
-  <div class="info">
-    <h1 id="title">Get <strong>insights</strong> that help your business grow.</h1>
-    <p id="description">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-  </div>
+    <!-- IMAGE & OVERLAY -->
+    <div class="image" role="img" aria-label="Image of three women at a business meeting, with laptops and coffee mugs">
 
-  <!-- STATS -->
-  <div class="stats">
-    <div class="companies">
-      <h2 class="data">10k+</h2>
-      <p class="project-title">companies</p>
+      <div class="purple"></div>
+
+      <picture class="picture">
+        <source  class="picture" media="(min-width: 750px)" srcset="images/image-header-mobile.jpg">
+        <img  class="picture" src="images/image-header-desktop.jpg" alt="Business group meeting">
+      </picture>
+
     </div>
 
-    <div class="templates">
-      <h2 class="data">314</h2>
-      <p class="project-title">templates</p>
-    </div>
+    <!-- INFO -->
+    <main class="info" aria-label="Company information">
 
-    <div class="queries">
-      <h2 class="data">12m+</h2>
-      <p class="project-title">queries</p>
-    </div>
-  </div>
+      <h1 id="title">Get <strong>insights</strong> that help your business grow.</h1>
+      <p id="description">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+
+    </main>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Stats section">
+
+      <div class="companies">
+        <h2 class="data">10k+</h2>
+        <p class="project-title">companies</p>
+      </div>
+
+      <div class="templates">
+        <h2 class="data">314</h2>
+        <p class="project-title">templates</p>
+      </div>
+
+      <div class="queries">
+        <h2 class="data">12m+</h2>
+        <p class="project-title">queries</p>
+      </div>
+
+    </section>
+
+    <!-- ATTRIBUTION -->
+    <footer class="attribution" aria-label="Attribution to Veronica L. Orozco">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      <br> 
+      Coded by <a href="https://www.frontendmentor.io/profile/VLOrozco">Veronica L. Orozco</a>.
+    </footer>
+
   </div>
 </div>
 
-<!-- ATTRIBUTION -->
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="https://www.frontendmentor.io/profile/VLOrozco">Veronica L. Orozco</a>.
-</div>
 </body>
 </html>
